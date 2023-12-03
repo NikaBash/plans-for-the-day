@@ -1,0 +1,42 @@
+body {
+    background-color: #e3e490;    
+}
+#container-countdown {
+    display: flex;
+    justify-content: center;
+}
+#countdown {
+    font-size: 60px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #5dff5d, #e3e490);
+    border-radius: 20px;
+    padding: 30px;
+}
+#myVideo {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+    
+}
+#myButton {
+    display: none;
+}
+@media all and (max-width: 500px) {
+    #myButton {
+        display: block;
+        padding: 10px;
+        background: linear-gradient(to right, #4ccf53, #e3e490);
+        border-radius: 20px;
+        border: none;
+    }
+    body {
+        background: #e3e490;
+    }
+    #myVideo {
+        width: max-content;
+    }
+}
